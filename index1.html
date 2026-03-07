@@ -1,13 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>Registration Form</title>
 </head>
 <body>
-    <p>
-    this is my first HTML page hi
-    </p>
+
+<h2>User Information Form</h2>
+
+<form>
+<table border="1" cellpadding="10">
+
+<tr>
+<td>First Name</td>
+<td><input type="text" name="firstname"></td>
+</tr>
+
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="lastname"></td>
+</tr>
+
+<tr>
+<td>Date & Time</td>
+<td><input type="datetime-local" name="datetime"></td>
+</tr>
+
+<tr>
+<td>Age Range</td>
+<td>
+<select name="age">
+<option value="18-25">18-25</option>
+<option value="26-35">26-35</option>
+<option value="36-45">36-45</option>
+<option value="46+">46+</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Location</td>
+<td><input type="text" name="location"></td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Other"> Other
+</td>
+</tr>
+
+<tr>
+<td>Comment</td>
+<td><textarea name="comment" rows="4" cols="30"></textarea></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+
+</table>
+</form>
+
 </body>
 </html>
